@@ -10,11 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "firebase": "^11.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0",
     "react-hook-form": "^7.53.2",
-    "axios": "^1.7.7",
+    "react-router-dom": "^6.28.0",
     "sass": "^1.80.6"
   },
   "devDependencies": {
