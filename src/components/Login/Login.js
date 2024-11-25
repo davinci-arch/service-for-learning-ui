@@ -1,57 +1,25 @@
-// src/components/Login.js
-import React, { useState } from 'react';
-import InputField from './InputField';
-import Button from './Button';
-import './Login.css';  // For styling
-import axios from 'axios';
+import React from 'react';
+import './Login.css';
 
-const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleLogin = async () => {
-    if (!email || !password) {
-      alert('Please fill in both fields');
-      return;
-    }
-  
-    try {
-      const response = await axios.post('https://your-api.com/login', { email, password });
-      console.log('Logged in successfully', response.data);
-    } catch (error) {
-      console.error('Login failed', error);
-    }
-  };
-
+function Login() {
   return (
-    <div className="login-container">
-      <div className="logo">Логотип</div>
-      <h2>Для початку роботи необхідно авторизуватись</h2>
-      
-      <InputField
-        type="email"
-        placeholder="Електронна адреса"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <InputField
-        type="password"
-        placeholder="Пароль"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      
-      <div className="actions">
-        <Button text="Увійти" onClick={handleLogin} />
-        <a href="/forgot-password">Забули пароль/Реєстрація</a>
-      </div>
-      
-      <div className="google-login">
-        <p>Вхід через google аккаунт</p>
-        <Button text="Google" onClick={() => console.log('Google Login')} />
+    <div className="login-wrapper">
+      <div className="logo">Логотип</div> {/* Placeholder for a logo */}
+      <div className="login-container">
+        <h2>Для початку роботи необхідно авторизуватись</h2>
+        <form>
+          <input type="email" placeholder="Електронна адреса" />
+          <input type="password" placeholder="Пароль" />
+          <div className="actions">
+            <button type="submit">Увійти</button>
+            <a href="#">Забули пароль/Реєстрація</a>
+          </div>
+          <p>Вхід через google аккаунт</p>
+          <button className="google-login" type="button">Google</button>
+        </form>
       </div>
     </div>
   );
-};
+}
 
 export default Login;

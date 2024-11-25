@@ -1,36 +1,90 @@
-.login-container {
-    width: 300px;
-    margin: 100px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+/* Main wrapper for the login page */
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Light background for the page */
   }
   
-  label {
-    display: block;
-    margin-bottom: 8px;
+  /* Placeholder for the logo */
+  .logo {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
   }
   
-  input {
+  /* Container for the form */
+  .login-container {
+    background-color: #2c2a34;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .login-container h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Form input fields */
+  .login-container input {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 12px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    background-color: #e1e1e1;
+    font-size: 14px;
   }
   
-  button {
-    width: 100%;
+  /* Button and link container */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  /* Submit button styling */
+  .login-container button {
+    width: 100px;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #e1e1e1;
+    color: #000000;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #0056b3;
+  /* Link styling */
+  .actions a {
+    color: #e1e1e1;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  /* Google login button */
+  .google-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #e1e1e1;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Adjusting text */
+  .login-container p {
+    color: #e1e1e1;
+    font-size: 12px;
+    margin-bottom: 10px;
   }
   
