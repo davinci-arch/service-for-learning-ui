@@ -1,0 +1,15 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 70px;
+}
+.objects{
+    max-width: 1200px;
+    width: 1200px;
+    margin-top: 34px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}

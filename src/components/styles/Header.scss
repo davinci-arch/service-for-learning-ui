@@ -1,0 +1,46 @@
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .navigation {
+        margin: 0 50px 0 50px;
+        ul {
+            display: flex;
+            gap: 25px;
+            li:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    span:hover{
+        text-decoration: underline;
+    }
+    .profile-menu{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .user-identity{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            #avatar-photo{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .auth-menu {
+        display: flex;
+        ul{
+            display: flex;
+            gap: 10px;
+            
+            li:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+

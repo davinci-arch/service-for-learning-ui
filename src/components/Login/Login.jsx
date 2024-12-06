@@ -9,7 +9,6 @@ function Login() {
 
   return (
     <div className="login-wrapper">
-      <div className="logo">Логотип</div> {/* Placeholder for a logo */}
       
       {isRegistering ? (
         // Show registration form if the user is registering

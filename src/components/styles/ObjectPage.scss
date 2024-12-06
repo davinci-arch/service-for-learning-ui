@@ -1,0 +1,63 @@
+.obj {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px #D9D9D9;
+    width: 356px;
+    height: 212px;
+    background-color: #D9D9D9;
+    box-sizing: border-box;
+
+    .obj-container {
+        display: flex;
+        gap: 12px;
+
+        .obj-data-desription {
+            width: 100%;
+
+            .object-header {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 14px;
+                cursor: pointer;
+
+                span:hover {
+                    text-decoration: underline;
+                }
+            }
+            .obj-description {
+                width: 100%;
+                white-space: normal;
+                /* Переносить текст */
+                overflow: hidden;
+                /* Приховує зайвий текст */
+                text-overflow: ellipsis;
+                /* Додає три крапки */
+                word-wrap: break-word;
+                /* Перериває довгі слова */
+                font-size: 14px;
+                color: #333;
+
+                /* Обмеження висоти для обробки великого тексту */
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                /* Вказує кількість рядків, після яких текст буде обрізатися */
+                -webkit-box-orient: vertical;
+                box-sizing: border-box;
+            }
+        }
+        #teacher-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+        }
+    }
+    .separator {
+        border-top: 1px solid black;
+        margin: 8px 0;
+        width: 100%;
+        box-sizing: border-box;
+        align-self: stretch;
+    }
+
+}
