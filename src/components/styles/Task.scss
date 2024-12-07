@@ -1,4 +1,12 @@
 .task {
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover .task-content .task-date {
+        color: white;
+    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,6 +23,14 @@
         font-weight: bold;
     }
 
+    .remove-task {
+        .remove-task-img {
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
     .task-content {
         display: flex;
         justify-content: space-between;
@@ -28,6 +44,7 @@
         .task-date {
             color: gray;
         }
+
     }
 
 

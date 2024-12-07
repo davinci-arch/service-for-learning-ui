@@ -1,13 +1,44 @@
 .section {
     margin-bottom: 20px;
 
-    .section-title {
-        font-size: 18px;
-        margin-bottom: 10px;
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .delete-section {
+            .delete-section-img {
+                cursor: pointer;
+                width: 24px;
+                height: 24px;
+            }
+        }
     }
+
+    .separator {
+        border-top: 1px solid black;
+        margin: 8px 6px;
+        width: 100%;
+        box-sizing: border-box;
+        align-self: stretch;
+    }
+
     .tasks {
         display: flex;
         flex-direction: column;
     }
-}
 
+    .create-new-task {
+        display: flex;
+        justify-content: center;
+        .create-new-task-img {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
