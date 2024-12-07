@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "../styles/ObjectsPage.scss"
-import ObjectPage from "./ObjectPage"
+import ObjectPageCard from "./ObjectPageCard"
 export default function ObjectsPage() {
 
     const [firstname, setFirstname] = useState("Олександр")
@@ -49,7 +49,7 @@ export default function ObjectsPage() {
                     <p>Нічого не знайдено</p> // Повідомлення якщо немає відповідних предметів
                 ) : (
                     filteredObjects.map((value, index) => (
-                        <ObjectPage data={value} key={index} />
+                        <ObjectPageCard data={value} key={index} />
                     ))
                 )}
             </div>

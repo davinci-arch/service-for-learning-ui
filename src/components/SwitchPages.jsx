@@ -3,6 +3,7 @@ import Login from "./Login/Login"
 import RegistrationForm from "./Registration/RegistrationForm"
 import Header from "./Header"
 import ObjectsPage from "./MainPage/Objects"
+import ObjectPage from "./ObjectPage/ObjectPage"
 
 export default function SwitchPages() {
     return (
@@ -12,6 +13,7 @@ export default function SwitchPages() {
             <Route path="/" element={<ObjectsPage />} />
             <Route path="/registration" element={<RegistrationForm />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/obj" element={<ObjectPage />} />
           </Routes>
         </Router>
       );

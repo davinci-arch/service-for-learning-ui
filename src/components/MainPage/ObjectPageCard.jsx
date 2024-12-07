@@ -1,7 +1,7 @@
 
 import "../styles/ObjectPage.scss"
 import { useState } from "react"
-export default function ObjectPage({ data }) {
+export default function ObjectPageCard({ data }) {
 
     const [rolename, setRoleName] = useState("Викладач")
 
