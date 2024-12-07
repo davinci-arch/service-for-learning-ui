@@ -1,0 +1,12 @@
+.object-page-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 100px;
+
+    .object-data {
+        width: 100%;
+        margin-top: 75px;
+
+    }
+}
