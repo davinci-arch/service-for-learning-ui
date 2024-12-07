@@ -10,7 +10,36 @@
     background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-    
+    .task-container-header {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+
+        .type-task {
+            margin-left: 10px;
+            display: flex;
+            gap: 10px;
+
+            .active {
+                background-color: green !important;
+            }
+
+            .type-task-btn {
+                cursor: pointer;
+                border: 1px solid gray;
+                background-color: gray;
+                padding: 5px;
+                color: white;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: rgba(128, 128, 128, 0.7);
+                }
+            }
+        }
+    }
 
     main {
         display: flex;
@@ -26,6 +55,11 @@
                 justify-content: space-between;
                 font-weight: bold;
                 margin-bottom: 10px;
+
+                .assignment-date-container {
+                    display: flex;
+                    gap: 10px;
+                }
             }
 
             .assignment-description,
@@ -34,6 +68,59 @@
                 padding: 10px;
                 border: 1px solid #ddd;
                 border-radius: 5px;
+            }
+            .attached-files {
+                display: flex;
+                justify-content: space-between;
+                .add-file-to-task-img {
+                    cursor: pointer;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .assignment-description {
+                .create-section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    transition: transform 0.2s ease;
+
+                    &:hover {
+                        transform: scale(1.05);
+
+                    }
+
+                    &:hover .create-section-icon {
+                        background-color: #f5f5f5;
+                    }
+
+                    .create-section-icon {
+                        cursor: pointer;
+                        width: 60px;
+                        height: 60px;
+                        border: 2px dashed #000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 8px;
+                        margin-bottom: 8px;
+                        transition: background-color 0.3s ease;
+
+                        .plus {
+                            font-size: 24px;
+                            font-weight: bold;
+                            color: #000;
+                        }
+                    }
+
+                    .create-section-text {
+                        font-size: 14px;
+                        color: #000;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
             }
         }
 
@@ -74,6 +161,23 @@
 
     }
 
+    .save-task-settings {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        #save-task-settings-btn {
+            cursor: pointer;
+            width: 200px;
+            padding: 5px 0;
+            border-radius: 3px;
+            background-color: black;
+            border: 0;
+            color: white;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
     .comments {
         margin-top: 20px;
 
