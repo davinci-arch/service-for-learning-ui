@@ -14,7 +14,7 @@ export default function Header() {
             <div className="navigation">
                 <ul>
                     <li>Розклад перездач</li>
-                    <li>Розклад дзвінків</li>
+                    <li><Link to="/lesson-schedule">Розклад дзвінків</Link></li>
                     <li>Розклад занять</li>
                     <li>Довідник користувача</li>
                 </ul>

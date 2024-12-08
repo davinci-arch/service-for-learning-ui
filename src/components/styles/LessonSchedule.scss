@@ -1,0 +1,123 @@
+.schedule-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .schedule-table {
+        margin-bottom: 20px;
+
+        .delete-btn {
+            padding: 5px 10px;
+            background: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .delete-btn:hover {
+            background: #c82333;
+        }
+
+        .table-header,
+        .table-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #f3f3f3;
+            border: 1px solid #ddd;
+        }
+
+        .table-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5px;
+
+            .time-input {
+                width: 100px;
+            }
+        }
+
+
+        .add-btn {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            background: #ccc;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background: #b5b5b5;
+
+            }
+        }
+    }
+
+    .schedule-settings {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .generate-btn,
+    .save-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: #28a745;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .generate-btn:hover,
+    .save-btn:hover {
+        background: #218838;
+    }
+
+    .save-btn {
+        margin-top: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,6 +1,5 @@
 
 import "../styles/NavigationPanel.scss"
-
 export default function NavigationPanel() {
     return (
         <div className="navigation-panel">
