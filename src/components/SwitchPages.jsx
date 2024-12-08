@@ -6,6 +6,7 @@ import ObjectsPage from "./MainPage/Objects"
 import ObjectPage from "./ObjectPage/ObjectPage"
 import TaskObjectPage from "./ObjectPage/TaskObject/TaskObjectPage"
 import LessonSchedule from "./Schedule/LessonSchedule"
+import MarksPage from "./Marks/MarksPage"
 export default function SwitchPages() {
     return (
         <Router>
@@ -17,7 +18,7 @@ export default function SwitchPages() {
             <Route path="/obj" element={<ObjectPage />} />
             <Route path="/obj/task" element={<TaskObjectPage />} />
             <Route path="/lesson-schedule" element={<LessonSchedule />} />
-             
+            <Route path="/obj/marks" element={<MarksPage />} />
           </Routes>
         </Router>
       );
