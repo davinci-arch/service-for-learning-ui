@@ -1,7 +1,7 @@
 
-export default function Cell({ grade }) {
+export default function Cell({ grade, onEdit }) {
     return (
-        <td className="cell">
+        <td className="cell" onClick={onEdit}>
             <div className="grade">{grade}</div>
         </td>
     )
