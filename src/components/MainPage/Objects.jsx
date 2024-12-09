@@ -1,6 +1,9 @@
 import { useState } from "react"
 import "../styles/ObjectsPage.scss"
 import ObjectPageCard from "./ObjectPageCard"
+// Path to the icon image
+import addSubjectIcon from "/src/assets/addSubjest.png"; 
+
 export default function ObjectsPage() {
 
     const [firstname, setFirstname] = useState("Олександр")
@@ -33,6 +36,11 @@ export default function ObjectsPage() {
         setNameObject(value)
     }
 
+    const handleCreateSubject = () => {
+        // Functionality for creating a new subject goes here
+        console.log("Create new subject button clicked");
+      };
+
     const filteredObjects = objects.filter((obj) =>
         obj.objname.toLowerCase().includes(nameObject.toLowerCase())
     );
@@ -43,6 +51,9 @@ export default function ObjectsPage() {
             <div>
                 <span>Введіть назву предмету:</span>
                 <input type="text" value={nameObject} onChange={e => handleObjectName(e)} />
+                <button className="create-subject-btn" onClick={handleCreateSubject}>
+                <img src={addSubjectIcon} alt="Створити предмет" />
+                </button>
             </div>
             <div className="objects">
                 {filteredObjects.length === 0 ? (
