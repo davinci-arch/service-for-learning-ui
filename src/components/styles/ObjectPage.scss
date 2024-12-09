@@ -60,4 +60,21 @@
         align-self: stretch;
     }
 
+    .input-group {
+        display: flex;
+        align-items: center;
+    }
+      
+    .create-subject-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+      
+        .create-subject-btn-img  {
+          width: 24px;
+          height: 24px;
+        }
+    }
+
 }

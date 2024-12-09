@@ -3,7 +3,7 @@ import "../styles/ObjectPage.scss"
 import { useState } from "react"
 export default function ObjectPageCard({ data }) {
 
-    const [rolename, setRoleName] = useState("Викладач")
+    const [rolename, setRoleName] = useState("Teacher")
 
     return (
         <div className="obj">
@@ -12,7 +12,7 @@ export default function ObjectPageCard({ data }) {
                 <div className="obj-data-desription">
                     <div className="object-header">
                         <span>{data.objname}</span>
-                        {rolename == "Викладач" ? <span>Видалити предмет</span> : null}
+                        {rolename == "Teacher" ? <span>Видалити предмет</span> : null}
                     </div>
                     <div className="separator"></div>
                     <div className="obj-description">{data.objdescription}</div>
