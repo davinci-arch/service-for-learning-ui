@@ -59,7 +59,7 @@ export default function ObjectsPage(role) {
             />
             
             {/* Conditionally rendering the 'Create Subject' button if roleObject is "Teacher" */}
-            {roleObject === "Teacher" && (
+            {/* {roleObject === "Teacher" && (
               <div className="create-subject-btn">
                 <img
                   src="/src/assets/addSubjest.png"
@@ -67,7 +67,7 @@ export default function ObjectsPage(role) {
                   className="create-subject-btn-img"
                 />
               </div>
-            )}
+            )} */}
           </div>
       
           <div className="objects">
